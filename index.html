@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="img/favicon-ifood.png" type="image/png">
+</head>
+<body onload="ShowCupom()">
+    <header class="cabecalho">   
+        <div class="cupons-container">
+            <img class="cupom-img" src="img/cupom.svg.png" alt="cupom-icon">
+            <div class="cupons-text">
+            <h1 class="cupons-title">Ganhe cupons!</h1>
+            <p class="cupons-paragrafo">Pegue seu cupom e aproveite o desconto</p>
+            <a class="btn-criar" href="cadastro.html">Criar conta</a>
+            </div>
+            <a class="close-cupom">X</a>
+        </div>
+        <div class="menu-hamburguer">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+        </div>
+        <img class="ifood-logo" src="img/ifood-logo.png" alt="ifood-logo">
+        <nav class="nav">
+            <a class="nav-item" href="#">Entregador</a>
+            <a class="nav-item" href="#">Restaurante e Mercado</a>
+            <a class="nav-item" href="#">Carreiras</a>
+            <a class="nav-item" href="#">iFood Card</a>
+            <div class="login-buttons">
+            <a id="nav-item" class="btn-criar" href="cadastro.html">criar conta</a>
+            <a id="nav-item" href="cadastro.html"><button class="btn-entrar">Entrar</button></a>
+            </div>
+        </nav>
+        
+    </header>
+    <section class="first-section">
+        <div class="title-container">
+        <h1 class="first-section-title">Tudo pra facilitar seu dia a dia</h1>
+        <h2 class="first-section-subtitle">O que você precisa está aqui. Peça e receba onde estiver.</h2>
+        </div>
+        <div class="endereco-input-container">
+            <img class="location-icon" src="img/location.svg" alt="location-icon">
+            <input class="endereco-input" placeholder="Endereço de entrega e número" type="text">
+            <button class="endereco-btn">Buscar</button>
+        </div>
+        <div class="estabelecimentos">
+        <div class="restaurante">
+                <h1 class="restaurante-title">Restaurante</h1>
+                <a class="link-restaurante" href="#">Ver opções ></a>
+            <img class="hamburguer-img" src="img/hamburguer.png" alt="hamburguer">
+        </div>
+        <div class="mercado">
+            <h1 class="mercado-title">Mercado</h1>
+            <a class="link-mercado" href="#">Buscar loja ></a>
+            <img class="car-shop-img" src="img/car-shop.webp" alt="car-shop">
+        </div>
+        </div>
+        <div class="setores">
+            <img src="img/bebidas.png" alt="bebidas">
+            <img src="img/farmacia.png" alt="farmacia">
+            <img src="img/express.png" alt="express">
+            <img src="img/pet-shop.png" alt="pet-shop">
+        </div>
+    </section>
+    <hr class="divisao-section1">
+    <section class="best-restaurants">
+        <div class="title-restaurante-container">
+        <h1 class="best-resturants-title">Os melhores restaurantes</h1>
+        </div>
+        <div class="restaurants-list-container">
+            <div class="restaurante-list">
+                <div class="restaurant-container">
+                    <div class="rs-content">
+                <div class="rs-logo-container">
+                  <img class="rs-logo" src="img/mcdonald-logo.png" alt="mc-donald">
+                </div>
+                    <img class="star-icon" src="img/star.svg" alt="star">
+                    <div class="star-text">
+                        <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                    </div>
+                  <div class="text-rs">
+                  <h1>MC Donalds</h1>
+                  <h2>Lanches</h2>
+                </div>
+                    </div>
+                </div>
+                <div class="restaurant-container">
+                    <div class="rs-content">
+                <div class="rs-logo-container">
+                  <img class="rs-logo" src="img/coco-bambu-logo.jpg" alt="coco-bambu-logo">
+                </div>
+                <img class="star-icon" src="img/star.svg" alt="star">
+                    <div class="star-text">
+                        <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                    </div>
+                  <div class="text-rs">
+                  <h1>Coco Bambu</h1>
+                  <h2>Frutos do Mar</h2>
+                </div>
+                    </div>
+                </div>
+                <div class="restaurant-container">
+                    <div class="rs-content">
+                <div class="rs-logo-container">
+                  <img class="rs-logo" src="img/china-in-box-logo.png" alt="china-in-box-logo">
+                </div>
+                <img class="star-icon" src="img/star.svg" alt="star">
+                <div class="star-text">
+                    <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                </div>
+                  <div class="text-rs">
+                  <h1>China in Box</h1>
+                  <h2>Chinesa</h2>
+                </div>
+                    </div>
+                </div>
+                <div class="restaurant-container">
+                    <div class="rs-content">
+                <div class="rs-logo-container">
+                  <img class="rs-logo" src="img/habibs-logo.png" alt="habibs-logo">
+                </div>
+                <img class="star-icon" src="img/star.svg" alt="star">
+                <div class="star-text">
+                    <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                </div>
+                  <div class="text-rs">
+                  <h1>Habib's</h1>
+                  <h2>Lanches</h2>
+                </div>
+                    </div>
+                </div>
+                <div class="restaurant-container">
+                    <div class="rs-content">
+                <div class="rs-logo-container">
+                  <img class="rs-logo" src="img/outback.png" alt="outback">
+                </div>
+                <img class="star-icon" src="img/star.svg" alt="star">
+                <div class="star-text">
+                    <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                </div>
+                  <div class="text-rs">
+                  <h1>Outback Steakhouse</h1>
+                  <h2>Lanches</h2>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banners">
+            <img src="img/banner1.webp" alt="banner1">
+            <img src="img/banner2.webp" alt="banner1">
+            <img src="img/banner3.webp" alt="banner1">
+        </div>
+        <div class="title-restaurante-container">
+            <h1 class="best-resturants-title">Os melhores mercados</h1>
+            </div>
+            <div class="restaurants-list-container">
+                <div class="restaurante-list">
+                    <div class="restaurant-container">
+                        <div class="rs-content">
+                    <div class="rs-logo-container">
+                      <img class="rs-logo" src="img/dia.webp" alt="mc-donald">
+                    </div>
+                        <img class="star-icon" src="img/star.svg" alt="star">
+                        <div class="star-text">
+                            <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                        </div>
+                      <div class="text-rs">
+                      <h1>Dia Market</h1>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-container">
+                        <div class="rs-content">
+                    <div class="rs-logo-container">
+                      <img style="border: 1px solid black; border-radius: 50px;" class="rs-logo" src="img/big.webp" alt="mc-donald">
+                    </div>
+                        <img class="star-icon" src="img/star.svg" alt="star">
+                        <div class="star-text">
+                            <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                        </div>
+                      <div class="text-rs">
+                      <h1>Big</h1>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-container">
+                        <div class="rs-content">
+                    <div class="rs-logo-container">
+                      <img class="rs-logo" src="img/eataly.webp" alt="mc-donald">
+                    </div>
+                        <img class="star-icon" src="img/star.svg" alt="star">
+                        <div class="star-text">
+                            <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                        </div>
+                      <div class="text-rs">
+                      <h1>Eataly</h1>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-container">
+                        <div class="rs-content">
+                    <div class="rs-logo-container">
+                      <img class="rs-logo" src="img/dia.webp" alt="mc-donald">
+                    </div>
+                        <img class="star-icon" src="img/star.svg" alt="star">
+                        <div class="star-text">
+                            <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                        </div>
+                      <div class="text-rs">
+                      <h1>Dia Market</h1>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-container">
+                        <div class="rs-content">
+                    <div class="rs-logo-container">
+                      <img style="border: 1px solid black; border-radius: 50px;" class="rs-logo" src="img/big.webp" alt="mc-donald">
+                    </div>
+                    <img class="star-icon" src="img/star.svg" alt="star">
+                    <div class="star-text">
+                        <p>Esta loja é uma das campeãs do iFood em qualidade de serviço</p> 
+                    </div>
+                      <div class="text-rs">
+                      <h1>Big</h1>
+                    </div>
+                        </div>
+                    </div>
+    </section>
+    <hr class="divisao-section2">
+    <section class="entregas">
+        <div class="left-entrega">
+            <img class="left-entrega-img" src="img/left-entrega.png" alt="woman">
+        </div>
+        <div>
+            <img class="right-entrega-img"  src="img/right-entrega.png" alt="house">
+        </div>
+    </section>
+    <hr class="divisao-section3">
+    <section class="hungry">
+        <div class="hungry-text-container">
+            <h1>
+                Você tem fome do quê?
+            </h1>
+            <p>Descubra como é ser um FoodLover e faça parte da nossa revolução!</p>
+            <button class="hungry-btn">Saiba mais</button>
+        </div>
+        <img class="food-banner" src="img/food-lover-banner.webp" alt="">
+    </section>
+    <div class="last-banner-container">
+        <img class="last-banner" src="img/last-banner.webp" alt="banner">
+    </div>
+    <footer class="rodape">
+        <section class="cidades">
+            <div class="cidades-titles">
+            <h1 class="cidade-title">Explore por cidades</h1>
+            <a class="cidade-link" href="">Ver todas</a>
+            </div>
+            <div class="cidades-container">
+                <div>
+                    <a href="">Belo Horizonte</a>
+                    <a href="">Brasília</a>
+                    <a href="">Camainas</a>
+                    <a href="">Curitiba</a>
+                    <a href="">Goiânia</a>
+                </div>
+                <div>
+                    <a href="">Guarulhos</a>
+                    <a href="">João Pessoa</a>
+                    <a href="">Natal</a>
+                    <a href="" >Niteroi</a>
+                    <a href="">Porto Alegre</a>
+                </div>
+                <div>
+                    <a href="">Rio de Janeiro</a>
+                    <a href="">Salvador</a>
+                    <a href="">Santo André</a>
+                    <a href="">Santos</a>
+                </div>
+                <div>
+                    <a href="">São Bernardo do Campo</a>
+                    <a href="">São Caetano do Sul</a>
+                    <a href="">São Paulo</a>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="ifood-footer-container">
+                <div class="ifood-colum">
+                    <h1>iFood</h1>
+                    <a  href="">Site Institucional</a>
+                    <a  href="">Fale Conosco</a>
+                    <a  href="">Carreiras</a>
+                    <a  href="">iFood Colômbia</a>
+                </div>
+                <div class="ifood-colum2">
+                    <h1>Descubra</h1>
+                    <a  href="">Cadastre seu Restaurante ou Mercado</a>
+                    <a  href="">"iFood Shop</a>
+                    <a  href="">Carreiras</a>
+                    <a  href="">Blog iFood Empresas</a>
+                </div>
+                <div class="social-footer">
+                    <h1>Social</h1>
+                    <div class="social-icons">
+                        <img src="img/facebook-f.svg" alt="facebook-icon">
+                        <img src="img/twitter.svg" alt="twitter-icon">
+                        <img src="img/youtube.svg" alt="youtube-icon">
+                        <img src="img/instagram.svg" alt="instagram-icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <img class="go-to-up" src="img/arrow.svg" alt="arrow">
+</body>
+<script src="app.js"></script>
+</html>

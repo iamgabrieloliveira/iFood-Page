@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 200px;
+}
+body{
+    background-color: #ffffff;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.05);
+}
+.ifood-logo{
+    width: 100px;
+    cursor: pointer;
+    margin-right: 60px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav > a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.login-buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 60px;
+}
+.btn-criar{
+    font-family: 'Poppins', sans-serif;
+    color: #EA1D2C;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.btn-entrar{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    background-color: #EA1D2C;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.first-section{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 60vh;
+    margin-top: 130px;
+}
+.first-section-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.first-section-subtitle{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+.endereco-input-container{
+    margin: 0 auto;
+}
+.endereco-input-container{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.endereco-input{
+    width: 800px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.endereco-btn{
+    padding: 12px 25px;
+    background-color: #EA1D2C;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.location-icon{
+    width: 15px;
+    position: relative;
+    left: 55px;
+}
+.estabelecimentos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.restaurante{
+    background-color: #EA1D2C;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.restaurante-title{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+.link-restaurante{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    left: 15px;
+}
+.hamburguer-img{
+    width: 170px;
+    position: relative;
+    left: 24px;
+    top: 40px;
+}
+.mercado{
+    background-color: #B6D048;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.mercado-title{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+.mercado-restaurante{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    left: 15px;
+}
+.link-mercado{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bolder;
+    position: relative;
+    left: 15px;
+    bottom: 31px;
+    background-color: #9EB53E;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.car-shop-img{
+    width: 130px;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+.cupons-container{
+    opacity: 0;
+    height: 0px;
+    width: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.103);
+    border-radius: 3px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: .6s;
+    background-color: white;
+}
+.cupons-text{
+    position: absolute;
+    top: 50%;
+    left:58%;
+    transform: translate(-50%, -50%);
+}
+.cupom-img{
+    width: 65px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cupons-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.cupons-paragrafo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.close-cupom{
+    position: absolute;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #EA1D2C;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+.setores{
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+.setores > img{
+    width: 180px;
+    transition: .6s;
+    cursor: pointer;
+}
+.setores > img:hover{
+    transform: translateY(-10px);
+}
+.divisao-section1{
+    margin: 60px auto;
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+.best-restaurants{
+    width: 100%;
+    height: 76vh;
+    margin: 0 auto;
+}
+.title-restaurante-container{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.best-resturants-title{
+    font-family: 'Poppins';
+    font-size: 22px;
+    text-align: center;
+}
+.restaurante-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.restaurante-list > div{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 120px;
+    width: 200px;
+    cursor: pointer;
+    align-items: center;
+}
+.restaurante-list > div:hover{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.rs-content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-rs{
+    margin: auto 0;
+    width: 100px;
+}
+.text-rs > h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.text-rs > h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+.rs-logo{
+    width: 55px;
+}
+.star-icon{
+    width: 15px;
+    position: relative;
+    left: 103px;
+    bottom: 45px;
+    cursor: pointer;
+}
+.star-text{
+    height: 0px;
+    visibility: hidden;
+    position: absolute;
+    padding: 0 10px;
+    border-radius: 5px;
+    width: 170px;
+    background-color: #F7F7F7;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.star-text > p{
+    font-size: 9px;
+    font-family: 'Poppins';
+}
+.star-icon:hover ~.star-text{
+    height: 35px;
+    visibility: visible;
+}
+.banners{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.banners > img{
+    width: 400px;
+}
+.divisao-section2{
+    margin: 10px auto;
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+.entregas{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.entregas > div > img{
+    cursor: pointer;
+}
+.divisao-section3{
+    margin: 110px auto;
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+.hungry{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.hungry-text-container{
+    font-family: 'Poppins';
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hungry-text-container > h1 {
+    font-size: 30px;
+}
+.hungry-text-container > p {
+    font-size: 14px;
+}
+.hungry-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: #EA1D2C;
+    padding: 15px 20px;
+    width: 130px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    cursor: pointer;
+}
+.last-banner-container{
+    display: flex;
+    justify-content: center;
+}
+.last-banner{
+    width: 900px;
+}
+.rodape{
+    padding: 30px;
+    width: 100%;
+    height: 89vh;
+    margin-top: 60px;
+    background-color: #f7f7f7;
+}
+.cidades-titles{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.cidade-title{
+    font-family: 'Poppins';
+}
+.cidade-link{
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: #EA1D2C;
+    font-weight: bolder;
+    font-size: 13px;
+}
+.cidades-container{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.cidades-container > div{
+    display: flex;
+    flex-direction: column;
+}
+.cidades-container > div > a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+.footer-hr{
+    border: none;
+    height: 1px;
+    width: 300px;                                                                                                                                                                                                ;
+    background-color: #00000049;
+    margin: 0 auto;
+}
+.ifood-footer-container{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins';
+    margin-top: 20px;
+}
+.ifood-colum, .ifood-colum2, .ifood-colum3{
+    display: flex;
+    flex-direction: column;
+}
+.ifood-colum > a{
+    font-size: 14px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+}
+.ifood-colum2 > a{
+    font-size: 14px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+}
+.ifood-colum3 > a{
+    font-size: 14px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+}
+.social-icons{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+.social-icons > img{
+    width: 40px;
+    cursor: pointer;
+}
+.go-to-up{
+    width: 55px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+}
+hr{
+    width: 80%;
+}

@@ -1,0 +1,174 @@
+@media(max-width: 1250px){
+    .banners > img{
+        width: 350px;
+    }
+    .endereco-input-container{
+        width: 80%;
+    }
+}
+@media(max-width: 1100px){
+    .banners > img{
+        width: 300px;
+    }
+    .rs-logo{
+        width: 40px;
+    }
+    .rs-content{
+        gap: 0px;
+    }
+    .left-entrega > img{
+        width: 350px;
+    }
+    .left-entrega-img, .right-entrega-img{
+        width: 410px;
+    }
+    .food-banner{
+        width: 410px;
+    }
+    .divisao-section3{
+        margin: 80px auto;
+    }
+    .restaurante-list > div{
+        width: 170px;
+        align-items: center;
+    }
+    .rodape{
+        height: auto;
+    }
+}
+@media(max-width: 960px){
+    .banners > img{
+        width: 250px;
+    }
+}
+@media(max-width: 930px){
+    .restaurante-list{
+        display: none;
+    }
+    .title-restaurante-container{
+        display: none;
+    }
+    .best-restaurants{
+        height: auto;
+    }
+    .last-banner{
+        width: 90%;
+        min-width: 400px;
+    }
+    .nav{
+        visibility: hidden;
+        gap: 40px;
+        flex-direction: column;
+        position: absolute;
+        background-color: #f7f7f7;
+        left: 0px;
+        top: 100px;
+        width: 0px;
+        height: 100vh;
+        transition: .6s;
+        overflow-x: hidden;
+    
+    }
+    .menu-hamburguer{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+    }
+    .line-one, .line-two, .line-three{
+        width: 20px;
+        height: 2px;
+        border: none;
+        background-color: black;
+        transition: .6s;
+        position: relative;
+    }
+    .line-one, .line-two{
+        margin-bottom: 5px;
+    }
+    .cabecalho.active .line-three{
+        opacity: 0;
+    }
+    .cabecalho.active .line-one{
+        transform: rotate(135deg);
+        top: 7px;
+    }
+    .cabecalho.active .line-two{
+        transform: rotate(-135deg);
+    }
+    .cabecalho.active .nav{
+        visibility: visible;
+        width: 300px;
+    }
+    .nav-item, #nav-item{
+        white-space: nowrap;
+    }  
+    .login-buttons{
+        margin-left: 0;
+    }
+    .setores > img{
+        width: 150px;
+    }
+    .banners > img{
+        width: 220px;
+    }
+    .entregas{
+        flex-direction: column;
+        gap: 0;
+        height: 77vh;
+        align-items: center;
+    }
+    hr{
+        width: 500px;
+    }
+}
+@media(max-width: 810px){
+    .hungry{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .banners{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banners > img{
+        width: 300px;
+    }
+}
+@media(max-width: 700px){
+    .setores > img{
+        width: 125px;
+    }
+    .restaurante, .mercado{
+        width: 280px;
+    }
+}
+@media(max-width: 600px){
+    .first-section{
+        height: auto;
+    }
+    .estabelecimentos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .setores{
+        flex-direction: column;
+    }
+    .setores > img{
+        width: 200px;
+    }
+    .ifood-colum, .ifood-colum2, .cidades-container{
+        display: none;
+    }
+    .ifood-footer-container{
+        flex-direction: column;
+    }
+}
+@media(max-width: 450px){
+    .endereco-input{
+        width: 50%;
+    }
+}
